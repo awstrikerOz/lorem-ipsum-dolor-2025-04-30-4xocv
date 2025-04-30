@@ -3,26 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum dolor</title>
     <meta name="description" content="Lorem ipsum dolor">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased bg-white">
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                <a href="https://awstrikerOz.github.io/lorem-ipsum-dolor-2025-04-30-4xocv" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent transition-transform duration-300 hover:scale-105">
                     Logo
-                </div>
+                </a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Features</a>
+                    <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Benefits</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Testimonials</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">About</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105">Contact</a>
                 </div>
-                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transform transition duration-300 ease-in-out">
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
+                </button>
+
+                <button class="hidden md:block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
                     Get Started
                 </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100">
+                <div class="px-6 py-4 space-y-4">
+                    <a href="#features" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a>
+                    <a href="#faq" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="block text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full hover:shadow-lg transform transition duration-300 ease-in-out hover:scale-105">
+                        Get Started
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -32,13 +67,13 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                        Lorem ipsum dolor
+                        Transform Your Digital Experience
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        Lorem ipsum dolor
+                        Empower your business with cutting-edge solutions that drive growth, enhance efficiency, and deliver measurable results.
                     </p>
-                    <a href="#" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
-                        Get Started Now
+                    <a href="#contact" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-xl transform transition duration-300 ease-in-out hover:scale-105">
+                        Start Your Journey Today
                     </a>
                 </div>
             </div>
@@ -46,45 +81,182 @@
 
         <section id="features" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Features</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
                         <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-4">Lorem ipsum dolor</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="text-xl font-semibold mb-4">Lightning Fast Performance</h3>
+                        <p class="text-gray-600">Experience blazing-fast load times and seamless interactions with our optimized infrastructure.</p>
                     </div>
-                    <!-- Repeat feature cards with different icons -->
+
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Enterprise-Grade Security</h3>
+                        <p class="text-gray-600">Rest easy with our advanced security measures and data protection protocols.</p>
+                    </div>
+
+                    <div class="p-8 rounded-2xl bg-white shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Real-Time Analytics</h3>
+                        <p class="text-gray-600">Make data-driven decisions with comprehensive analytics and reporting tools.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="benefits" class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Benefits</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Benefits</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div class="flex items-start space-x-6">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div class="flex items-start space-x-6 group">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-purple-200 transition-colors duration-300">
                             <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Lorem ipsum dolor</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h3 class="text-xl font-semibold mb-2">Increased Productivity</h3>
+                            <p class="text-gray-600">Boost your team's efficiency by up to 40% with our streamlined workflows and automation tools.</p>
                         </div>
                     </div>
-                    <!-- Repeat benefit items -->
+
+                    <div class="flex items-start space-x-6 group">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-purple-200 transition-colors duration-300">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Cost Savings</h3>
+                            <p class="text-gray-600">Reduce operational costs by up to 30% through intelligent resource optimization and automated processes.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-24 bg-white">
+        <section id="testimonials" class="py-24 bg-white">
             <div class="container mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to get started?</h2>
-                    <p class="text-xl text-gray-600 mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
-                        Contact Us
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Implementing this solution has transformed our business operations. We've seen a 45% increase in team productivity and significant cost savings."</p>
+                        <div class="font-semibold">Sarah Johnson</div>
+                        <div class="text-sm text-gray-500">CTO, TechCorp</div>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The real-time analytics have given us unprecedented insights into our operations. Customer satisfaction has improved by 60%."</p>
+                        <div class="font-semibold">Michael Chen</div>
+                        <div class="text-sm text-gray-500">Operations Director, GlobalTech</div>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The security features are top-notch. We feel confident knowing our data is protected by enterprise-grade security measures."</p>
+                        <div class="font-semibold">Emily Rodriguez</div>
+                        <div class="text-sm text-gray-500">Security Manager, SecureNet</div>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"The implementation was smooth, and the support team has been exceptional. Our ROI has exceeded expectations."</p>
+                        <div class="font-semibold">David Thompson</div>
+                        <div class="text-sm text-gray-500">CEO, InnovateX</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-600 mb-8">
+                        Founded in 2020, our company emerged from a vision to revolutionize how businesses handle digital transformation. What started as a small team of passionate innovators has grown into a global leader in enterprise solutions, serving thousands of satisfied clients worldwide.
+                    </p>
+                    <p class="text-gray-600">
+                        Our mission is to empower organizations with cutting-edge technology solutions that drive growth and innovation. We believe in transparency, continuous improvement, and building lasting partnerships with our clients. Our core values of innovation, integrity, and excellence guide everything we do.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-3">How long does implementation typically take?</h3>
+                        <p class="text-gray-600">Implementation usually takes 2-4 weeks, depending on your organization's size and requirements. Our dedicated team ensures a smooth transition with minimal disruption to your operations.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What kind of support do you offer?</h3>
+                        <p class="text-gray-600">We provide 24/7 technical support, regular maintenance updates, and dedicated account management. Our support team is available via phone, email, and live chat.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Is my data secure?</h3>
+                        <p class="text-gray-600">Yes, we employ enterprise-grade security measures including end-to-end encryption, regular security audits, and compliance with international data protection standards.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Can I integrate with existing systems?</h3>
+                        <p class="text-gray-600">Yes, our platform offers extensive API support and pre-built integrations with major business tools and systems, ensuring seamless connectivity with your existing infrastructure.</p>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What are the pricing options?</h3>
+                        <p class="text-gray-600">We offer flexible pricing plans tailored to your needs, from startup-friendly options to enterprise solutions. Contact our sales team for a customized quote.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-gradient-to-br from-purple-50 via-white to-pink-50" style="background-image: url('https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center bg-white/90 backdrop-blur-sm rounded-2xl p-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Business?</h2>
+                    <p class="text-xl text-gray-600 mb-12">Join thousands of successful businesses who have already taken the leap into digital excellence.</p>
+                    <a href="#" class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white text-lg px-8 py-4 rounded-full hover:shadow-xl transform transition duration-300 ease-in-out hover:scale-105">
+                        Schedule a Demo
                     </a>
                 </div>
             </div>
@@ -98,20 +270,20 @@
                     <div class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
                         Logo
                     </div>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+                    <p class="text-gray-600">Empowering businesses with innovative solutions.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Careers</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Resources</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://awstrikerOz.github.io/lorem-ipsum-dolor-2025-04-30-4xocv/blog.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Documentation</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Help Center</a></li>
                     </ul>
@@ -119,8 +291,8 @@
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms</a></li>
+                        <li><a href="https://awstrikerOz.github.io/lorem-ipsum-dolor-2025-04-30-4xocv/privacy.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://awstrikerOz.github.io/lorem-ipsum-dolor-2025-04-30-4xocv/terms.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Terms of Service</a></li>
                         <li><a href="#" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Security</a></li>
                     </ul>
                 </div>
@@ -130,5 +302,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
